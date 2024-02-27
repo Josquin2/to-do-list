@@ -1,20 +1,43 @@
-.plus{
-    width: 50px;
-    height: 50px;
-    cursor: pointer;
+.to-do-input {
+    display: flex;
+    align-items: center;
+    padding-left: 30px;
 }
-.to-do-input{
+
+.to-do-input img{
+    width: 55px;
+    height: 55px;
+    cursor: pointer;
+    padding: 15px; 
+}
+.to-do-input input{
+    outline: none;
     width: 300px;
     height: 50px;
+    font-size: 20px;
+    border-radius: 15px;
 }
+ul li {
+    list-style: none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    cursor: pointer;
+    padding: 10px;
+}
+li {
+    background: #edeef0;
+    inline-size: 40%;
+    margin-left: 30px;
+    margin-bottom: 10px;
+    border-radius: 15px;
+  }
 .bin{
     width: 15px;
     height: 15px;
     cursor: pointer;
 }
-.deletedElem{
-    color: blue;
-}
-.elem{
-    color: gray;
+.alert{
+    margin-left: 70px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(100, 100, 100);
 }

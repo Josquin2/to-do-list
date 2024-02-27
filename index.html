@@ -3,21 +3,30 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>To-do</title>
+    <title>To-do-list</title>
     <script src="/scripts/script.js"></script>
     <link rel="stylesheet" href="/styles/reset.css">
     <link rel="stylesheet" href="/styles/style.css">
 </head>
 <body>
-    <input type="input"
-    class = "to-do-input"
-    id="input"
-
-    >
-    <img src="/images/plus.jpg" alt="+" class="plus" onclick="addInput()">
-    <ul id="list-items">
-
-    </ul>
+    <div class="to-do-input">
+        <input 
+            type="input"
+            id="input"
+            placeholder="add your tasks!"
+        />
+        <img 
+        src="/images/plus.jpg" 
+        alt="+" 
+        onclick="addInput()"
+        /> 
+    </div>
+    <div>
+        <h5 class="alert" id="alerts"></h5>
+        <ul id="list-items">
+        </ul>
+    </div>
+    
 
     
 </body>
