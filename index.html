@@ -1,33 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>To-do-list</title>
     <script src="/scripts/script.js"></script>
-    <link rel="stylesheet" href="/styles/reset.css">
-    <link rel="stylesheet" href="/styles/style.css">
-</head>
-<body>
-    <div class="to-do-input">
-        <input 
-            type="input"
-            id="input"
-            placeholder="add your tasks!"
+    <link rel="stylesheet" href="/styles/reset.css" />
+    <link rel="stylesheet" href="/styles/style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="container-input">
+        <input class="input" id="input" placeholder="add your tasks!" />
+        <img
+          class="image"
+          src="/images/plus.jpg"
+          alt="+"
+          onclick="addInput()"
         />
-        <img 
-        src="/images/plus.jpg" 
-        alt="+" 
-        onclick="addInput()"
-        /> 
-    </div>
-    <div>
-        <h5 class="alert" id="alerts"></h5>
-        <ul id="list-items">
-        </ul>
-    </div>
-    
+      </div>
 
-    
-</body>
+      <div>
+        <h5 class="alert" id="alerts"></h5>
+        <ul class="tasks" id="list-items"></ul>
+      </div>
+    </div>
+  </body>
 </html>
